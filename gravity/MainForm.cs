@@ -132,7 +132,7 @@ namespace gravity
 				label4.Text="aci degeri:"+aci.ToString();
 				aci++;
 				shapedButton2.Location=n;
-				double d=Math.Pow(distance,2)/Convert.ToDouble(shapedButton1.Text);
+				double d=Math.Sqrt(distance)*distance/Convert.ToDouble(shapedButton1.Text);
 				label5.Text="acisal frekans:"+d;
 				timer1.Interval=(int)d;
 			//	label6.Text=((double)(Math.Pow(distance,3)/(shapedButton1.Width*shapedButton1.Height))).ToString();
@@ -150,7 +150,7 @@ namespace gravity
 				label4.Text="aci degeri:"+aci.ToString();
 				aci++;
 				shapedButton1.Location=n;
-				double d=Math.Pow(distance,2)/Convert.ToDouble(shapedButton2.Text);
+				double d=Math.Sqrt(distance)*distance/Convert.ToDouble(shapedButton2.Text);
 				label5.Text="acisal frekans:"+d.ToString();
 				timer1.Interval=(int)d;
 				//label6.Text=((double)(Math.Pow(distance,3)/(shapedButton2.Width*shapedButton2.Height))).ToString();
